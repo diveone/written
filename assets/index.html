@@ -1,0 +1,20 @@
+<html>
+<head>
+    <title>Blog</title>
+    <script src="js/vue.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.16.2/axios.js"></script>
+    <script src="js/index.js"></script>
+</head>
+<body>
+    <div id="app">
+        {{ message }}
+        <ul>
+            <li v-for="article in articles">
+                <a href="detail.html">{{ article.title }}</a>
+            </li>
+
+        </ul>
+    </div>
+
+</body>
+</html>
